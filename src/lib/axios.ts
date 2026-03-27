@@ -2,7 +2,8 @@ import axios from 'axios'
 import { useAuthStore } from '@/store/auth-store'
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://pulse-backend-wqkr.onrender.com',
+    // baseURL: 'http://localhost:3000',
     headers: { 'Content-Type': 'application/json' },
 })
 

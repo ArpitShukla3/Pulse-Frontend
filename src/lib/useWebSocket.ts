@@ -2,7 +2,8 @@ import { useEffect, useRef, useCallback } from 'react'
 import { useAuthStore } from '@/store/auth-store'
 import { useChatStore } from '@/store/chat-store'
 
-const WS_URL = 'ws://localhost:4001'
+const WS_URL = 'https://pulse-thinclient.onrender.com/'
+// const WS_URL = 'ws://localhost:4001'
 const RECONNECT_DELAY = 2000
 
 export interface WsOutgoingChat {

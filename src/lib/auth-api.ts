@@ -15,7 +15,8 @@ export async function signUp(data: {
 
 export async function signIn(data: { email: string; password: string }) {
     const res = await api.post('/api/auth/signin', {
-        ...data,
+        email: data.email,
+        password: data.password,
         deviceType: 'web',
     })
     const { user, accessToken, refreshToken } = res.data
